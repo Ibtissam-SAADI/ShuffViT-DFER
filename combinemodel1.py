@@ -23,7 +23,7 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
 
-parser = argparse.ArgumentParser(description='PyTorch CK+ CNN Training')
+parser = argparse.ArgumentParser(description='PyTorch KMUFED ShuffViT-DFER Training')
 parser.add_argument('--model', type=str, default='Ourmodel', help='CNN architecture')
 parser.add_argument('--dataset', type=str, default='efficientvitwcc', help='dataset')
 parser.add_argument('--fold', default=1, type=int, help='k fold number')
