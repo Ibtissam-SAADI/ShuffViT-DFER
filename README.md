@@ -34,7 +34,7 @@ We use 10-fold Cross validation in the experiment.
 ### Confusion matrices ###
 
 <div style="display: flex; justify-content: flex-start;">
-  <img width=400 src="figures/ok11.png"/>
-  <img width=400 src="figures/ok12.png"/>
+  <img width=440 src="figures/ok12.png"/>
+  <img width=440 src="figures/ok11.png"/>
 </div>
 
