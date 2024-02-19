@@ -1,7 +1,4 @@
-# 10 crop for data enhancement
-
 from __future__ import print_function
-
 import torch
 import csv
 import torch.nn as nn
@@ -15,8 +12,7 @@ import os
 import argparse
 import utils
 import matplotlib.pyplot as plt
-from models.build import EfficientViT_M5
-from models import combmodel1, newmodel, shufflenetw, shufflenetwcc, efficientvitw, efficientvitwcc
+from models import combmodel1
 from models.efficientvit import EfficientViT
 from KMU import KMU
 from torch.autograd import Variable
