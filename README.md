@@ -18,7 +18,7 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 
 ### Train and Test model for all 10 fold ###
 - *KMU-FED dataset*: python 10fold.py
-- *KDEF dataset*: python combinedmodelkdef.py --model Ourmode --bs 32 --lr 0.0001
+- *KDEF dataset*: python combinedmodelkdef.py --model Ourmodel --bs 32 --lr 0.0001
 
 ### plot confusion matrix ###
 - python KMUconfmtrx.py --mode 1
