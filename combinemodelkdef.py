@@ -1,7 +1,4 @@
-# 10 crop for data enhancement
-
 from __future__ import print_function
-
 import torch
 import csv
 import torch.nn as nn
@@ -15,25 +12,18 @@ import os
 import argparse
 import utils
 import matplotlib.pyplot as plt
-from models.build import EfficientViT_M5
-from models import combmodel1, efficientvitwcc, efficientvitw, shufflenetw, shufflenetwcc
+from models import combmodel1
 from models.efficientvit import EfficientViT
-from KMU import KMU
 from KDEF import KDEF
 from torch.autograd import Variable
-from models.vgg import VGG
-from models import SwinT
 import timm
 import time
-from vit_pytorch import SimpleViT
 from torchvision import models
 import ssl 
 ssl._create_default_https_context = ssl._create_unverified_context
 
-#torch.manual_seed(42)
-
-parser = argparse.ArgumentParser(description='PyTorch CK+ CNN Training')
-parser.add_argument('--model', type=str, default='VGG19', help='CNN architecture')
+parser = argparse.ArgumentParser(description='PyTorch KDEF ShuffViT-DFER Training')
+parser.add_argument('--model', type=str, default='Ourmodel', help='CNN architecture')
 parser.add_argument('--dataset', type=str, default='KDEFNew5', help='dataset')
 parser.add_argument('--fold', default=1, type=int, help='k fold number')
 parser.add_argument('--bs', default=16, type=int, help='batch_size')
@@ -89,9 +79,9 @@ testloader = torch.utils.data.DataLoader(testset, batch_size=16, shuffle=False, 
 
 # Model
 if opt.model == 'Ourmodel':
-   num_classes = 7  # Adjust based on your task
+   num_classes = 7  
    net  = combmodel1.CombinedModel(num_classes) 
-   #net  = efficientvitwo.CombinedModel(num_classes) 
+
 if opt.resume:
     # Load checkpoint.
     print('==> Resuming from checkpoint..')
