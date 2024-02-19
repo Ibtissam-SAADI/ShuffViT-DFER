@@ -5,7 +5,7 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 
 # ShuffViT-DFER Architecture
 <div style="display: flex; justify-content: flex-start;">
-  <img width=800 src="figures/shuffarch.png"/>
+  <img width=500 src="figures/shuffarch.png"/>
 </div>
 
 ## Datasets ##
