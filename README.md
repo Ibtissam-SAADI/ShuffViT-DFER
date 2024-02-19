@@ -21,15 +21,20 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 - *KDEF dataset*: python combinedmodelkdef.py --model Ourmodel --bs 32 --lr 0.0001
 
 ### plot confusion matrix ###
-- python KMUconfmtrx.py --mode 1
+- python confmatrxkmu.py --model Ourmodel
+- python confmatrxkmu.py --model Ourmodel
 
 ###  KMU-FED Accurary     ###
 We use 10-fold Cross validation in the experiment.
-- Model：    CLIVP-FER ;       Average accuracy：  97.364%  <Br/>
+- Model：    ShuffViT-DFER ;       Average accuracy：  97.364%  <Br/>
+
+###  KDEF Accurary     ###
+- Model：    ShuffViT-DFER ;       Accuracy：  97.364%  <Br/>
 
 ### Confusion matrices ###
 
 <div style="display: flex; justify-content: flex-start;">
+  <img width=600 src="figures/both.png"/>
   <img width=600 src="figures/both.png"/>
 </div>
 
