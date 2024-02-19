@@ -207,31 +207,4 @@ print(f'Total Time: {total_hours}h {total_mins}m {total_secs}s | Estimated Total
 
 print("best_Test_acc: %0.3f" % best_Test_acc)
 print("best_Test_acc_epoch: %d" % best_Test_acc_epoch)
-
-
-
-# After training loop is complete
-# Plot training and test accuracy
-'''''
-plt.figure(figsize=(12, 4))
-plt.subplot(1, 2, 1)
-plt.plot(range(start_epoch, total_epoch), train_accuracy_values, 'bo-', label='Training Accuracy')
-plt.plot(range(start_epoch, total_epoch), test_accuracy_values, 'ro-', label='Test Accuracy')
-plt.title('Training and Test Accuracy')
-plt.xlabel('Epochs')
-plt.ylabel('Accuracy')
-plt.legend()
-
-# Plot training and test loss
-plt.subplot(1, 2, 2)
-plt.plot(range(start_epoch, total_epoch), train_loss_values, 'bo-', label='Training Loss')
-plt.plot(range(start_epoch, total_epoch), test_loss_values, 'ro-', label='Test Loss')
-plt.title('Training and Test Loss')
-plt.xlabel('Epochs')
-plt.ylabel('Loss')
-plt.legend()
-
-plt.tight_layout()
-plt.show()
-'''
 ##################################################################
