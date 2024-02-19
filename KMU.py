@@ -5,7 +5,7 @@ import h5py
 import torch.utils.data as data
 
 
-class KMU2(data.Dataset):
+class KMU(data.Dataset):
  
     def __init__(self, split='Training', fold = 1, transform=None):
         self.transform = transform
