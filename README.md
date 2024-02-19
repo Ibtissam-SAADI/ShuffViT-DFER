@@ -21,8 +21,8 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 - *KDEF dataset*: python combinedmodelkdef.py --model Ourmodel --bs 32 --lr 0.0001
 
 ### plot confusion matrix ###
-- python confmatrxkmu.py --model Ourmodel
-- python confmatrxkmu.py --model Ourmodel
+- python confmatrixkmu.py --model Ourmodel
+- python confmatrixkdef.py --model Ourmodel
 
 ###  KMU-FED Accurary     ###
 We use 10-fold Cross validation in the experiment.
