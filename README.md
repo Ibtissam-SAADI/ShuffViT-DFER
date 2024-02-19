@@ -13,12 +13,11 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 - KDEF from https://kdef.se/download-2/index.html
 
 ### Preprocessing ###
--*For KMU-FED dataset*: 'python formatdescription.py' to add the text description to the images and save them as CSV format, then, then put them in the "data" folder. <Br/>
-'python preprocess_KMUFED.py' to preprocess the image and text data. <Br/>
+-*For KMU-FED dataset*: 'python preprocess_kmu.py' to save the data in .h5 format, then, "KMU.py" to split the data into 10 folds. <Br/>
+-*For KDEF dataset*: 'python preprocess_KDEF.py' to save the data in .h5 format, then, "KDEF.py" to split the data. <Br/>
 
 ### Train and Test model ###
-*Mode 0*: Image features only.<Br/>
-*Mode 1*: Image and text features.
+
 
 ### Train and Eval model for all 10 fold ###
 - *KMU-FED dataset*: python 10fold_train.py
