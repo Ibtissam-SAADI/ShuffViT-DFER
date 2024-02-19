@@ -77,7 +77,7 @@ class_names = ['AFraid', 'ANger', 'DIsgust', 'HAppy', 'NEutral', 'SAd', 'Surpris
 
 # Model
 if opt.model == 'Ourmodel':
-   num_classes = 7  # Adjust based on your task
+   num_classes = 7  
    net  = combmodel1.CombinedModel(num_classes) 
 
 
