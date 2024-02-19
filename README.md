@@ -26,10 +26,10 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 
 ###  KMU-FED Accurary     ###
 We use 10-fold Cross validation in the experiment.
-- Model：    ShuffViT-DFER ;       Average accuracy：  97.364%  <Br/>
+- Model：    ShuffViT-DFER ;       Average accuracy：  97.273%  <Br/>
 
 ###  KDEF Accurary     ###
-- Model：    ShuffViT-DFER ;       Accuracy：  97.364%  <Br/>
+- Model：    ShuffViT-DFER ;       Accuracy：  92.441%  <Br/>
 
 ### Confusion matrices ###
 
