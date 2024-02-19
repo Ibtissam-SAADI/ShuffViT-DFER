@@ -21,7 +21,7 @@ from models import combmodel1
 from torchvision import models
 from models import *
 
-parser = argparse.ArgumentParser(description='PyTorch MKUFED shuffvit-DFER Training')
+parser = argparse.ArgumentParser(description='PyTorch KDEF shuffvit-DFER Training')
 parser.add_argument('--dataset', type=str, default='KDEFNew4', help='CNN architecture')
 parser.add_argument('--model', type=str, default='efficientViT', help='CNN architecture')
 
