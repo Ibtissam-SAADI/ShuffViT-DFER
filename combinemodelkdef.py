@@ -44,7 +44,7 @@ train_loss_values = []
 test_loss_values = []
 
 #cut_size = 60
-total_epoch = 700
+total_epoch = 400
 
 path = os.path.join(opt.dataset + '_' + opt.model, str(opt.fold))
 
