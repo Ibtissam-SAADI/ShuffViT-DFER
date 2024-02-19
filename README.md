@@ -17,7 +17,8 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 -*For KDEF dataset*: 'python preprocess_KDEF.py' to save the data in .h5 format, then, "KDEF.py" to split the data. <Br/>
 
 ### Train and Test model for all 10 fold ###
-- *KMU-FED dataset*: python 10fold_train.py
+- *KMU-FED dataset*: python 10fold.py
+- *KDEF dataset*: python combinedmodelkdef.py --
 
 ### plot confusion matrix ###
 - python KMUconfmtrx.py --mode 1
