@@ -1,12 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Dec 14 17:28:26 2022
-
-@author: IEMN
-"""
-
 from __future__ import print_function
-
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -18,20 +10,18 @@ import argparse
 import itertools
 import os
 from torch.autograd import Variable
-from vit_pytorch import SimpleViT
 import matplotlib.pyplot as plt
 import numpy as np
-from models.build import EfficientViT_M4
+from models.build import EfficientViT_M2
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 import timm
-from models import SwinT, gcvitt1
 from KMU import KMU
-from models import combmodel1, combmodel2, shufflenetw,shufflenetwcc, efficientvitw, efficientvitwcc
+from models import combmodel1
 from torchvision import models
 from models import *
 
-parser = argparse.ArgumentParser(description='PyTorch CK+ CNN Training')
+parser = argparse.ArgumentParser(description='PyTorch MKUFED shuffvit-DFER Training')
 parser.add_argument('--dataset', type=str, default='shufflnetw1', help='CNN architecture')
 parser.add_argument('--model', type=str, default='efficientViT', help='CNN architecture')
 
@@ -42,11 +32,8 @@ device = "cuda:0" if torch.cuda.is_available() else "cpu"
 transforms_vaild = torchvision.transforms.Compose([
                                      torchvision.transforms.ToPILImage(),
                                      torchvision.transforms.Resize((224,)),
-                                     #torchvision.transforms.CenterCrop(224),
                                      torchvision.transforms.ToTensor(),
-                                     #torchvision.transforms.CenterCrop((96)),
                                      torchvision.transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225,))
-                                     #torchvision.transforms.Normalize((0.2274,), (0.2353,))
                                      ])
 
 
